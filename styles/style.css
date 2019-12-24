@@ -13,13 +13,16 @@ body{
     background: #f9f9f9;
     color: #737476;
     direction: rtl;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 h2{
     font-size: 40px;
 }
-h2{
+h3{
     font-size: 30px;
+}
+h4{
+    font-size: 25px;
 }
 p{
     font-size: 18px;
@@ -35,17 +38,39 @@ button{
     border: none;
     color: #fff;
     background: linear-gradient(to top, #bba365, #ece2ad);
+    cursor: pointer;
 }
 .bg-white{
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 2px 12px 5px rgba(222, 220, 220, 0.7294117647058823);
 }
-
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+}
+.nav_wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
 /* Header Section */
 header{
     background-image: url(../assets/images/Path\ 10.png);
     background-position: bottom;
+    padding: 95px 0 0 0;
 }
 header::before{
     width: 617px;
@@ -66,7 +91,8 @@ header::before{
     padding-top: 10px;
 }
 .introSecMobile img{
-    width: 626px;
+    width: 70%;
+    transform: translate(-66px, 40px);
 }
 .appLinks a{
     border: 1px solid;
