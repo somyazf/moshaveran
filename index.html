@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Moshaveran</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/bootstrap-4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-4.4.1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-4.4.1/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="assets/fontawesome-free-5.10.1-web/css/all.min.css">
 </head>
@@ -36,15 +38,19 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- nav-toggler for mobile version only -->
+                        <button class="nav-toggler">
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <header class="">
+    <header class="position-relative">
         <div class="container introSec pb-5">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-12">
                     <div class="introForm text-center">
                         <div><h2>اپلیکیشن مشاوره حقوقی آنلاین</h2></div>
                         <div>
@@ -61,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 images introSecMobile">
+                <div class="col-lg-6 col-sm-12 images introSecMobile">
                     <img src="assets/images/intro-mobile.png" alt="mobile">
                 </div>
             </div>
@@ -72,7 +78,7 @@
             <div class="col-lg-6 col-sm-12">
                 <img src="assets/images/Group 10.png" alt="aboutUS" class="w-100">
             </div>
-            <div class="col-lg-6 col-sm-12 text-right">
+            <div class="col-lg-6 col-sm-12 text-right text-box">
                 <h2>درباره ما</h2>
                 <p class="text-justify pt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
             </div>
@@ -80,7 +86,7 @@
     </div>
     <div id="questionFeature" class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12 text-right">
+            <div class="col-lg-6 col-sm-12 text-right text-box">
                 <h2>امکان درج سوالات حقوقی</h2>
                 <p class="text-justify pt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است..</p>
             </div>
@@ -91,7 +97,7 @@
     </div>
     <div id="timeSetFeature">
         <div class="single-feature">
-            <div class="timeimg col-sm-12">
+            <div class="timeimg col-sm-12 d-none d-lg-block">
                 <img src="assets/images/Group 13.png" alt="timeSet" class="w-75 ml-auto mr-auto d-block">
             </div>
             <div class="container">
@@ -99,33 +105,34 @@
                     <h2>امکان تنظیم زمان مشاوره ها</h2>
                     <p class="text-justify pt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                 </div>
+                <div class="col-sm-12 d-block d-sm-none mobileTimeImg">
+                    <img src="assets/images/Group 13.png" alt="timeSet" class="">
+                </div>
             </div>
         </div>
     </div>
     <div id="services" class="container mt-lg-5">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col-3 col-lg-3 col-sm-6">
+        <div class="row px-5">
+            <div class="col-lg-4 col-sm-12 d-none d-lg-block"></div>
+            <div class="col-lg-4 col-sm-12 px-5 service_wrapper">
                 <div class="bg-white pr-2 pl-2 pt-4 pb-4 text-right">
                     <img src="assets/images/XMLID_3724_.png" alt="XMLID_3724" class="w-25">
                     <h3 class="pt-4">لورم ایپسوم</h3>
-                    <P>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</P>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
                 </div>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col-lg-4 col-sm-12 d-none d-lg-block"></div>
         </div>
-        <div class="justify-content-center row">
-            <div class="col-3 col-lg-3 col-sm-6">
+        <div class="justify-content-center row px-5">
+            <div class="col-lg-4 col-sm-12 px-5 service_wrapper">
                 <div class="bg-white pr-2 pl-2 pt-4 pb-4 text-right">
                     <img src="assets/images/XMLID_3806_.png" alt="XMLID_3724" class="w-25">
                     <h3 class="pt-4">لورم ایپسوم</h3>
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
                 </div>
             </div>
-            <div class="col-4"></div>
-            <div class="col-3 col-lg-3 col-sm-6">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 col-sm-12 px-5 service_wrapper">
                 <div class="bg-white pr-2 pl-2 pt-4 pb-4 text-right">
                     <img src="assets/images/XMLID_3710_.png" alt="XMLID_3724" class="w-25">
                     <h3 class="pt-4">لورم ایپسوم</h3>
@@ -149,7 +156,7 @@
                 </form>
             </div>
             <div class="col-lg-6 col-sm-12">
-                <ul class="nav justify-content-lg-end justify-content-md-center pb-3">
+                <ul class="nav justify-content-lg-end pb-3 footerNavigation">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">وبلاگ</a>
                     </li>
@@ -163,8 +170,8 @@
             </div>
         </div>
         <div class="row pl-5 pr-5 pt-5">
-            <div class="row col-lg-6">
-                <div class="col-lg-6 col-sm-12 text-right text-sm-center text-lg-right pb-4">
+            <div class="row col-lg-6 contactInfo">
+                <div class="col-lg-6 col-sm-12 text-lg-right pb-4">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <h4><b>ارتباط با ما</b></h4>
@@ -174,7 +181,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 col-sm-12 text-right text-sm-center text-lg-right">
+                <div class="col-lg-6 col-sm-12 text-lg-right">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <h4><b>خدمات مشتریان</b></h4>
@@ -194,8 +201,8 @@
             <div class="col-6"></div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="scripts/bootstrap-4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
