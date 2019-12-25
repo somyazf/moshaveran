@@ -41,6 +41,11 @@ button{
     color: #fff;
     background: linear-gradient(to top, #bba365, #ece2ad);
     cursor: pointer;
+    transition: 1s ease-in-out;
+}
+button:hover{
+    background: linear-gradient(to top, #b99c53, #ad9455);
+    transition: 1s ease-in-out;
 }
 .bg-white{
     background-color: #fff;
@@ -68,6 +73,43 @@ nav{
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+.main-menu li a:hover{
+    color: #fff;
+}
+/* nav-toggler css start */
+.nav-toggler {
+    padding: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 43px;
+    display: none;
+  }
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: #cebc8a;
+    display: block;
+    transition: .5s;
+  }
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
 /* Header Section */
 header{
     background-image: url(../assets/images/Path\ 10.png);
@@ -104,7 +146,13 @@ header::before{
 .appLinks a span{
     padding-right: 6px;
 }
-
+.appLinks a:hover{
+    background-color: #d2c293;
+    color: #fff;
+    transition: 0.5s ease;
+    text-decoration: none;
+    border: 1px solid #d2c293;
+}
 input{
     padding: 8px;
     width: 50%;
@@ -169,6 +217,9 @@ footer{
 footer a{
     color: #737476;
 }
+footer a:hover{
+    color: #c39b2c;
+} 
 
 @media all and (max-width: 768px){
     h2{
@@ -231,3 +282,40 @@ footer a{
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 767px) {
+    /* navbar css for mobile start */
+    .nav-toggler{
+      display: block;
+    }
+    .main-menu {
+      min-height: 60px;
+    }
+    .main-menu ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 60px);
+      left: 0;
+      top: 80px;
+      flex-direction: column;
+      align-items: center;
+      max-height: 0;
+      overflow: hidden;
+      transition: 1s;
+      background-color: #636d76;
+    }
+    .main-menu ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .main-menu ul li a {
+      padding: 25px;
+    }
+    .main-menu ul li a:hover {
+      background-color: rgba(255,255,255,.1);
+    }
+    .main-menu ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+  }
