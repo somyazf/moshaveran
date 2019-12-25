@@ -80,7 +80,7 @@ header::before{
     content: " ";
     position: absolute;
     top: -191px;
-    left: -29px;
+    left: -31px;
     background-image: url(../assets/images/Group\ 5.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,6 +104,7 @@ header::before{
 .appLinks a span{
     padding-right: 6px;
 }
+
 input{
     padding: 8px;
     width: 50%;
@@ -170,8 +171,39 @@ footer a{
 }
 
 @media all and (max-width: 768px){
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    header::before{
+        content: none;
+    }
+    .appLinks{
+        padding-top: 20px !important;
+    }
+    .introSecMobile img {
+        transform: translate(50px, 26px);
+    }
+    .text-box{
+        padding: 0 32px;
+    }
     #quImage img {
         transform: translate(0, 0);
+    }
+    .single-feature {
+        margin-bottom: 0;
+    }
+    .service_wrapper{
+        padding: 10px 0;
+    }
+    .mobileTimeImg > img{
+        width: 700px;
+        transform: translate(147px, 10px);
     }
     .footer-logo > img{
         width: 50%;
@@ -187,6 +219,15 @@ footer a{
     }
     .emailInput{
         width: 100%;
-
+        margin-bottom: 15px;
+    }
+    .emailInput + button{
+        margin-right: -31px !important;
+    }
+    .contactInfo > div{
+        text-align: center;
+    }
+    .footerNavigation{
+        justify-content: center;
     }
 }
