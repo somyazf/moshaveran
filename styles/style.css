@@ -76,6 +76,14 @@ nav{
 .main-menu li a:hover{
     color: #fff;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #737476;
+}
+  
 /* nav-toggler css start */
 .nav-toggler {
     padding: 8px;
@@ -235,6 +243,7 @@ footer a:hover{
     }
     header{
         top: -30px;
+        background-size: cover;
     }
     header::before{
         content: none;
@@ -323,4 +332,15 @@ footer a:hover{
       max-height: 100vh;
       overflow: visible;
     }
-  }
+}
+
+@media screen and (max-width: 424px){
+    .appLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .appLinks a {
+        margin: 4px 0;
+    }
+}
