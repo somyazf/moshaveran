@@ -84,7 +84,7 @@ nav{
     background-color: #737476;
 }
   
-/* nav-toggler css start */
+/* nav-toggler */
 .nav-toggler {
     padding: 8px;
     background-color: transparent;
@@ -118,6 +118,7 @@ nav{
   .nav-toggler.toggler-open span:after {
     transform: translateY(-3px) rotate(-45deg);
   }
+
 /* Header Section */
 header{
     background-image: url(../assets/images/Path\ 10.png);
@@ -241,6 +242,10 @@ footer a:hover{
     h4{
         font-size: 20px;
     }
+    nav{
+        position: fixed;
+        background-color: #636d76;
+    }
     header{
         top: -30px;
         background-size: cover;
@@ -283,7 +288,7 @@ footer a:hover{
         justify-content: center;
     }
     .emailInput{
-        width: 100%;
+        width: 60%;
         margin-bottom: 15px;
     }
     .emailInput + button{
@@ -297,8 +302,8 @@ footer a:hover{
     }
 }
 
-@media screen and (max-width: 767px) {
-    /* navbar css for mobile start */
+@media screen and (max-width: 540px) {
+    /* navbar css for mobile */
     .nav-toggler{
       display: block;
     }
@@ -306,7 +311,7 @@ footer a:hover{
       min-height: 60px;
     }
     .main-menu ul {
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: calc(100vh - 60px);
       left: 0;
@@ -334,6 +339,12 @@ footer a:hover{
     }
 }
 
+@media all and (max-width: 500px){
+    .emailInput {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 424px){
     .appLinks{
         display: flex;
@@ -342,5 +353,16 @@ footer a:hover{
     }
     .appLinks a {
         margin: 4px 0;
+    }
+    .mobileInputForm{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        height: 93px;
+    }
+    .mobileInput{
+        width: 100%;
+        text-align: center;
     }
 }
